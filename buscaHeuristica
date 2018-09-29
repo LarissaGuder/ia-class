@@ -1,0 +1,57 @@
+AULA ALGORITMOS DE BUSCA HEURÍSTICA E OTIMIZAÇÃO
+
+- Porque são necessários?
+
+- Exemplos de problemas: Caixeiro Viajante, Labirinto, Xadrez, Escala  de trabalho aeromoças/pilotos.
+
+- Espaço de busca, porque não realizar uma busca completa.
+	* Jogo Go, 2.08168x10^170 combinações possíveis.
+
+- Diferentes problemas, muitas soluções.
+	* Não existe um algoritmo que atenda todos problemas
+
+- Técnicas de otimização
+	* Redução do espaço de busca
+	* Algoritmos Heurísticos
+	* Elementos Estocásticos (não deterministicos) 
+
+- Classificação dos algoritmos
+	* Solução vs Solução Ótima
+	* Complexidade de tempo
+	* Complexidade de espaço
+
+- Elementos de um problema de busca:
+	* Conjunto finito de estados (espaço de busca)
+	* Conjunto finito de estados iniciais
+	* Conjunto finito de objetivos
+	* Função que recebe o estado atual e retorna os estados alcançáveis
+	* Função de custo, recebe o estado atual e o possível próximo, com seu custo.
+
+- Busca Global vs Busca Local
+
+- Hill Climbing
+	* Escolhe um ponto na vizinhança e o elege como melhor solução
+	* Repete até não ter mais como evoluir ou timeout
+	* Tende a encontrar a solução ótima local.
+	* Não garante encontrar solução global.
+
+- Bruta Força / Blind Search
+	* Exploram todo espaço de busca
+	* Garantem a solução ótima global
+
+- Breadth First
+	* Retorna de uma vizinhança e continua evoluindo lateralmente
+
+- Depth-first search
+	* Explora a vizinhança em profundidade, posteriormente retornando e tentando outras ramificações
+
+- Problemas de Caminho
+	* São transformados em grafos e depois é aplicado uma abordagem.
+
+- Tabu Search
+	* Mantém uma lista de locais proibidos (Tabu) em memória
+	* Proibidos ou por já terem sido visitados ou por não otimizarem a função objetivo
+	* Bom para problemas combinatórios
+	* Critério de parada: numero de iterações, tempo, iterações sem melhoria na função objetivo
+
+- Problema da Loja 711

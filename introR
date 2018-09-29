@@ -1,0 +1,77 @@
+AULA INTRODUÇÃO R
+
+http://www.r-project.org/
+
+- OpenSource, Atualizações frequentes, Multiplataforma, extensível.
+
+- Processamento em memória
+
+- Diversos pacotes para IA
+
+- RStudio: Scripts, Console, Ambiente, Gráficos, Histórico, Pacotes, Ajuda
+
+- Repositório CRAN
+
+- Pacotes Populares:
+	* Dplyr: manipulação dados
+	* Devtools: desenvolvimento
+	* Foreign: Importar dados de outras ferramentas
+	* Ggplot2: visualização
+
+- Instalar pacotes
+Install.packages("arules",deppendencies=TRUE)
+
+- Carregar pacotes
+library(arules)
+
+- Descarregar pacotes
+detach("package:arules", unload=TRUE)
+
+- Outros comandos:
+	* getwd() - Diretório padrão
+	* setwd("c:\\dados") - Altera diretório padrão
+	* quit() - Encerra R
+	* save(objetos, file="arquivo.Rdata") - Salva Objetos
+	* load(file="arquivo.Rdata") - Carrega Objetos
+	* plot() - gráfico
+	* hist() - gráfico
+	* boxplot() - gráfico
+	* sd(x) - desvio Padrão
+	* help(sd) - Chama o help da função
+	* head() - primeiras linhas de um conjunto de dados
+	* tail - ultimas linhas
+	* sumarry() - resumo de dados
+	* file.choose() - abre arquivo
+	* dim() - dimensões conjunto dados
+	* colnames() - nomes colunas
+	* rownames() - nomes linhas
+	* colbind() - adiciona coluna
+
+
+- Tipos de dados: Caractere, Numerico, Inteiro, Fator
+
+- Operadores de atribuição: = <-
+
+- Vetores, linguagem vetorial, todos objetos são vetores.
+	* x <- c(1,2,3,4,5,6)
+	* x[1]
+- Matrixes
+	* x[linha,coluna]
+
+- DataFrame:
+	* semelhante a matrizes
+	* cada coluna pode ter um tipo de dado
+	* linhas e colunas podem ter nomes
+
+	Dataframe$coluna
+
+- Fatores: Variáveis categóricas
+	Dados = c(1,2,3)
+	Dados = fator(dados)
+
+- Argumentos: flexíveis, nomeados, em ordem ou fora de ordem.
+
+- Funções
+compras <- function(solucao){
+	#Codigo
+} 
